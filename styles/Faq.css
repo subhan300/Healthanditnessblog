@@ -1,0 +1,39 @@
+.faq{
+
+  padding: 2rem;
+  width: 93%;
+  margin: auto auto;
+  margin-top: 3rem;
+  
+}
+.faq-row-wrapper >.faq-title {
+  padding:1rem .1rem !important;
+   
+
+}
+.faq-body{
+  max-height: 50vh !important;
+  overflow-y: scroll;
+  
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+@media screen and (max-width:375px) {
+  .styles_faq-row-wrapper__3vA1D h2{
+    font-size: 22px;
+  }  
+  .faq{
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+  }
+  .styles_row-title__1YiiY{
+ font-size: 14px !important;
+  }
+  .styles_row-content__QOGZd{
+    font-size: 11px !important;
+  }
+}

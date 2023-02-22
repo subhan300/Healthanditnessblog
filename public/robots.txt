@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://blogging-page-psi.vercel.app
+
+# Sitemaps
+Sitemap: https://blogging-page-psi.vercel.app/sitemap.xml

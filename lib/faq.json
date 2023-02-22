@@ -1,0 +1,29 @@
+{
+  "title": "FAQ (How it works)",
+  "rows": [
+  
+    {
+      "title": "What Is Our Goal ?",
+      "content": "Our goal is to make the bus navigation as seamless and straightforward as possible for our users by providing detailed descriptions of each bus route, including the Greenline bus and People Bus Service, as well as key information such as bus stops, "
+    },
+    {
+      "title": "How does the map feature function within the context of each bus blog on our website?",
+      "content": "Our website features a map feature for each bus blog that clearly illustrates the bus routes and the corresponding bus stops. This allows users to easily identify and locate the specific bus route and stops relevant to their destination. The map also displays the route taken by each bus, making it a useful tool for trip planning and navigation."
+    },
+    {
+      "title": "How can I find the bus route to my destination?",
+      "content": "To find the bus route to your destination, visit our blog page and search for the specific bus. You can also consult the bus route chart at the bottom of the page, locate the bus route that serves your destination, and review the map provided on the corresponding bus page to identify the specific bus stops and route."
+    },
+    {
+      "title": "What is the process for identifying the bus route to a destination if I don't know anything ?",
+      "content":"If you are uncertain about the bus route to your destination, we recommend following these steps: Navigate to the bus blog page on our website Search for the bus route chart at the bottom of the page Locate the bus route that serves your destination by consulting the chart       Once you have identified the bus route, access the corresponding bus page on our website  Review the map provided on the page to identify the specific bus stops and route the bus will take."
+    },
+    {
+      "title": "Is the information on the map 100% accurate?",
+      "content": "We have made every effort to ensure the accuracy of the information provided on our map feature, by using the official data available. However, there may be discrepancies or errors in the direction or route provided. We highly appreciate if you can notify us of any mistakes you encounter and we will take action to rectify them promptly."
+    },{
+      "title":"Is there an opportunity for me to contribute to this application?",
+      "content":"We welcome the participation of our users in expanding the coverage of our application by providing new bus routes and other relevant information. If you are interested in contributing to our application"
+    }
+  ]
+}
