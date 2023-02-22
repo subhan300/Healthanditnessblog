@@ -9,13 +9,14 @@ import Head from "next/head";
 import c from "../images/c2.webp";
 import ContentSection from "../components/content-section/ContentSection";
 
-// import bus from "../images/bus4.gif"
+
+
 
 function HomePage() {
   return (
     <div>
       <Head>
-        <title>Buses Routes</title>
+        <title>Free Health and Fitness</title>
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://blogging-page-psi.vercel.app/" />
