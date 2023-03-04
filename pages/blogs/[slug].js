@@ -1,7 +1,6 @@
 import React from "react";
 import { fetchEntries, getSingleBlogPost } from "../api/comment";
-import ReactDOM from "react-dom";
-import Map from "../../components/Map";
+
 import Comment from "../../components/comment";
 import { BLOCKS } from "@contentful/rich-text-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -61,7 +60,7 @@ function posts({ post, slug }) {
       <div className="blog_post">
         <Head>
           {metaName.map((val) => (
-            <meta  title={val.name} content={val.content}></meta>
+            <meta title={val.name} content={val.content}></meta>
           ))}
           {metaProperty.map((val) => (
             <meta property={val.property} content={val.content}></meta>
