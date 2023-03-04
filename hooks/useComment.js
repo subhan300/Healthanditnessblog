@@ -5,7 +5,8 @@ import { useAuth0 } from '@auth0/auth0-react'
 import { Redis } from '@upstash/redis';
 const fetcher = (url) => fetch(url).then((res) => res.json())
 
-export default function useComments() {
+export default function useComments(title) {
+  console.log("title >",title)
   const { user } = useAuth0();
   const date=()=>{// 👇️ in Local time
     const date = new Date();
@@ -30,7 +31,7 @@ export default function useComments() {
   const [text, setText] = useState('')
 let [data,setData]=useState("")
 const comments=async()=>{
-  let datas = await redis?.lrange('comments', 0, 100 )
+  let datas = await redis?.lrange(title, 0, 100 )
 
   console.log(datas)
   setData(datas)
@@ -44,7 +45,7 @@ const comments=async()=>{
     const token = await getAccessTokenSilently()
 
     try {
-      await redis.lpush('comments',{content: e.target[0].value,createdAt:date(),name:user?.name,picture:user?.picture,
+      await redis.lpush(title,{content: e.target[0].value,createdAt:date(),name:user?.name,picture:user?.picture,
       email:user?.email,sub:user?.sub})
    
     //  let data = await redis.get('comments');

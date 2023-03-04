@@ -14,7 +14,7 @@ MAILCHIMP_API_SERVER:process.env.MAILCHIMP_API_SERVER,
 MAILCHIMP_AUDIENCE_ID:process.env.MAILCHIMP_AUDIENCE_ID
   },
   images:{
-    domains:['images.ctfassets.net']
+    domains:['images.ctfassets.net','media.istockphoto.com','img.freepik.com']
   },
 
  

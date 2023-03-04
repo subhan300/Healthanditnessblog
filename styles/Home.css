@@ -1,41 +1,56 @@
-.container_home{
+.container_home {
   /* border:1px solid red; */
   width: 93%;
   margin: auto auto;
   margin-top: 3rem;
 }
 
-.home_hero_secttion{
- display: flex;
- justify-content: space-between;
- align-items: flex-start;
- margin-top: 3rem;
+.home_hero_secttion {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
 }
 
-.hero_left{
+.hero_left {
   width: 48%;
+  padding-left: 2rem;
   height: 100%;
 }
 
-.hero_right{
-  width:52%;
-
+.hero_right {
+  width: 52%;
 }
-.text_animation{
-  font-size: clamp(2rem,3.5vw,2.8rem);
+
+.mt_4{
+  margin-top: -7rem;
+}
+.img_lan {
+  width:100% !important;
+  height: 100% !important;
+  object-fit:cover;
+  /* border: 1px solid blue; */
+}
+
+.health_parameter_image{
+width: 95%;
+height: 95%;
+}
+
+.text_animation {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: bolder;
 }
 
-.text_sm{
-
+.text_sm {
   font-size: 1.1rem;
   font-weight: 400;
-  color: #677294; ;
+  color: #677294;
 }
-.mt_2{
+.mt_2 {
   margin-top: 2rem;
 }
-.list_points{
+.list_points {
   margin-top: 1rem;
   font: 300 16px "Poppins", sans-serif;
   color: #677294;
@@ -46,47 +61,56 @@
   flex-direction: column;
   gap: 1rem;
 }
-.list_points>li{
-  list-style:circle;
+.list_points > li {
+  list-style: circle;
   /* background-color:; */
 }
 
-.section1_title{
+.section1_title {
   color: #2c2c51;
-    font-family: "Poppins", Sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 44px;
-    width: 80%;
-    min-width: 340px;
+  font-family: "Poppins", Sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 44px;
+  width: 80%;
+  min-width: 340px;
 }
-.nav_link_btn_padding{
-  padding:1rem 3rem !important;
+.nav_link_btn_padding {
+  padding: 1rem 3rem !important;
 }
 
 @media screen and (max-width: 767px) {
-  .home_hero_secttion{
+  .mt_4{
+    margin-top: -3rem !important;
+  }
+  .text_animation{
+    margin-top: 1rem;
+  }
+  .home_hero_secttion {
     /* flex-direction: column; */
     margin: auto auto;
     flex-wrap: wrap-reverse;
   }
-  .hero_left,.hero_right{
+  .hero_left,
+  .hero_right {
     width: 100%;
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  .section1_title{
+  .section1_title {
     min-width: 10px;
     width: 100%;
     text-align: center;
   }
-  .list_points>li{
+  .list_points > li {
     text-align: start !important;
   }
 }
 @media screen and (max-width: 426px) {
-  .section1_title{
-   font-size: 1.5rem;
-   line-height: 30px;
-   /* width: 90%; */
+  .section1_title {
+    font-size: 1.5rem;
+    line-height: 30px;
+    /* width: 90%; */
   }
 }

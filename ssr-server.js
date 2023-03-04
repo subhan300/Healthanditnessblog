@@ -13,8 +13,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.get('/submit',async (req, res)=>{
   try {
-  console.log(req?.query.email)
-  const email=req?.query.email;
 // console.log("email>>>>>>>>>>>>",email,"sdd",req.data,req.params)
   const API_KEY = process.env.MAILCHIMP_API_KEY;
   const DATACENTER = process.env.MAILCHIMP_API_SERVER;
@@ -56,7 +54,6 @@ const config = {
     //   mode:"no-cors"
     // });
  const response=await axios.post(url,data,config)
- console.log("res>>>>>>>>>",response.data)
     // console.log("res",response)
     // JSON.stringify(response.data)
     if(res.statusCode==200){
@@ -89,7 +86,6 @@ app.listen(3000, () => {
   console.log('Server listening on port 3000!')
 })
 function getRequestParams(email) {
-  console.log("woee")
   // const API_KEY = process.env.MAILCHIMP_API_KEY;
   // const LIST_ID = process.env.MAILCHIMP_LIST_ID;
   const API_KEY = process.env.MAILCHIMP_API_KEY;

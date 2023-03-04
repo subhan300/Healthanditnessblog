@@ -2,35 +2,36 @@ import Container from "../components/container";
 import Image from "next/image";
 import TextAnimation from "../components/text-animation/TextAnimation";
 import Footer from "../components/Footer/Footer";
-import bus from "../images/bus5.webp";
-import HealthAndFitness from "../images/fitnessandnutritiondiet.webp";
-import NutritionAndDiet from "../images/nutritiondiet.webp";
+import HealthAndFitness from "../images/healthy life.png";
+import NutritionAndDiet from "../images/healthandfitness.jpg";
 import Head from "next/head";
-import c from "../images/c2.webp";
 import ContentSection from "../components/content-section/ContentSection";
 
-// import bus from "../images/bus4.gif"
 
 function HomePage() {
   return (
     <div>
       <Head>
-        <title>Buses Routes</title>
+        <title>Free Health And Fintess</title>
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <link rel="canonical" href="https://blogging-page-psi.vercel.app/" />
         <meta
           property="article:published_time"
           content="2022-01-01T12:00:00+00:00"
         />
         <meta property="article:author" content="subhan akram"></meta>
+        <meta name="title" content="Free Health And Fitness" />
         <meta
-          name="title"
-          content="Bus System in Karachi - Detailed Bus Route Information and Map Feature"
-        />
+          name="keywords"
+          content="fitness & nutrition,women's nutrition and fitness,health fitness nutrition,physical fitness and nutrition"
+        ></meta>
         <meta
           name="description"
-          content="Our website provides a one-stop-shop for information on the bus system in Karachi, including detailed descriptions of each bus route, a map feature to easily locate bus routes, fare information, schedule and reviews of bus services, and a comparison chart to help users decide on their preferred option."
+          content="We are committed to
+          providing you with accurate and up-to-date information on
+          nutrition and health."
         />
         <meta property="og:type" content="website" />
         <meta
@@ -45,18 +46,14 @@ function HomePage() {
           property="og:description"
           content="Our website provides a one-stop-shop for information on the bus system in Karachi, including detailed descriptions of each bus route, a map feature to easily locate bus routes, fare information, schedule and reviews of bus services, and a comparison chart to help users decide on their preferred option."
         />
-        <meta
-          property="og:title"
-          content="Bus System in Karachi - Detailed Bus Route Information and Map Feature"
-        />
+        <meta property="og:title" content="Free Health And Fitness" />
         <meta property="twitter:card" content="summary" />
-        <meta
-          property="twitter:title"
-          content="Bus System in Karachi - Detailed Bus Route Information and Map Feature"
-        />
+        <meta property="twitter:title" content="Free Health And Fitness" />
         <meta
           property="twitter:description"
-          content="Our website provides a one-stop-shop for information on the bus system in Karachi, including detailed descriptions of each bus route, a map feature to easily locate bus routes, fare information, schedule and reviews of bus services, and a comparison chart to help users decide on their preferred option."
+          content="We are committed to
+          providing you with accurate and up-to-date information on
+          nutrition and health."
         />
         <meta
           property="twitter:image"
@@ -75,16 +72,26 @@ function HomePage() {
               <TextAnimation />
             </div>
             <div className="hero_right bd_green">
-              <Image src={HealthAndFitness} alt="my desk" width={1000} />
+              <Image className="img_lan mt_4" 
+              width={1000}
+              height={600}
+              src={HealthAndFitness} alt="my desk"
+              priority={1}
+              />
             </div>
           </div>
           <br />
-          <div className="home_hero_secttion bd_yellow mt-5">
+          <div className="home_hero_secttion bd_yellow ">
             <div className="hero_right bd_green">
               <Image
                 src={NutritionAndDiet}
                 alt="Nutrition Diet"
+                className="health_parameter_imagex"
+                priority={2}
                 // width={1000}
+                // width={600}
+                // height={600}
+                // sizes="(max-width: 600px) 100vw, (max-width: 960px) 50vw, 800px"
               />
             </div>
             <div className="hero_left bd_green">

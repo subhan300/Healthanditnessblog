@@ -17,10 +17,7 @@
   
 }
 
-::-webkit-scrollbar {
-  width: 0;
-  background-color: transparent;
-}
+
 @media screen and (max-width:375px) {
   .styles_faq-row-wrapper__3vA1D h2{
     font-size: 22px;

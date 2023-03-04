@@ -127,6 +127,7 @@ margin: auto auto;
   }
   .content_section>h1{
     margin-top: 0;
+    font-size: 2rem;
   }
   .mt_negative{
     margin-top: -1rem !important;
