@@ -1,18 +1,18 @@
-import { useAuth0 } from '@auth0/auth0-react'
-import { AiOutlineSend } from 'react-icons/ai'
+import { useAuth0 } from "@auth0/auth0-react";
+import { AiOutlineSend } from "react-icons/ai";
 
 type CommentFormProps = {
-  text: string
-  setText: Function
-  onSubmit: (e: React.FormEvent) => Promise<void>
-}
+  text: string;
+  setText: Function;
+  onSubmit: (e: React.FormEvent) => Promise<void>;
+};
 
 export default function CommentForm({
   text,
   setText,
   onSubmit,
 }: CommentFormProps) {
-  const { isAuthenticated, logout, loginWithPopup } = useAuth0()
+  const { isAuthenticated, logout, loginWithPopup } = useAuth0();
 
   return (
     <form onSubmit={onSubmit}>
@@ -22,7 +22,7 @@ export default function CommentForm({
         placeholder={
           isAuthenticated
             ? `What are your thoughts?`
-            : 'Please login to leave a comment'
+            : "Please login to leave a comment"
         }
         onChange={(e) => setText(e.target.value)}
         value={text}
@@ -32,7 +32,7 @@ export default function CommentForm({
       <div className="flex items-center mt-4">
         {isAuthenticated ? (
           <div className="flex items-center space-x-6">
-            <button  aria-label="comment send" className="nav_link_btn send ">
+            <button aria-label="comment send" className="nav_link_btn send ">
               <AiOutlineSend />
             </button>
             {/* <button
@@ -54,5 +54,5 @@ export default function CommentForm({
         )}
       </div>
     </form>
-  )
+  );
 }

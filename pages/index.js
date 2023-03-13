@@ -86,7 +86,7 @@ function HomePage() {
               <Image
                 src={NutritionAndDiet}
                 alt="Nutrition Diet"
-                className="health_parameter_imagex"
+                className="health_parameter_image"
                 priority={2}
                 // width={1000}
                 // width={600}

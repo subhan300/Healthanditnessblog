@@ -33,8 +33,10 @@
 }
 
 .health_parameter_image{
-width: 95%;
-height: 95%;
+width: 80%;
+height: 50%;
+margin-top: -2rem;
+margin-left: 2rem;
 }
 
 .text_animation {
@@ -105,6 +107,12 @@ height: 95%;
   }
   .list_points > li {
     text-align: start !important;
+  }
+  .health_parameter_image{
+    margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+margin-left: 0rem;
   }
 }
 @media screen and (max-width: 426px) {

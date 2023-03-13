@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
@@ -7,11 +7,12 @@ export default function Document() {
         <meta charSet="utf-8" />
         <meta name="robots" content="follow, index" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+        <link rel="shortcut icon" href="/static/favicon.png" />
       </Head>
       <body className="bg-white text-gray-700 antialiased">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
